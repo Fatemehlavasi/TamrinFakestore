@@ -1,0 +1,11 @@
+.Delete{
+    background-color: rgb(0,80,153);
+    width: 90%;
+    height: 200px;
+    z-index: 100;
+    display: flex;
+}
+
+/* .Delete button{
+    border: none;
+} */
