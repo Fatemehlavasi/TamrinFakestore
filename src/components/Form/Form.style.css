@@ -1,5 +1,5 @@
 .Container-Form{
-    /* background-color: aqua; */
+    background-color: #fff;
     height: 100vh;
     position: relative;
     display: flex;
@@ -46,7 +46,6 @@
     height: 570px;
     background-color: #fff;
     border-radius: 10px;
-    /* margin-top: 20px; */
    
 }
 
@@ -87,3 +86,84 @@
     margin-bottom: 50px;
     
 }
+
+@media screen and (max-width: 1024px) 
+    {
+        .btn-submit{
+          
+            padding: 12px 174px;
+        
+        }
+        .pic-form{
+            margin-left: 65%;
+            /* background-color: aqua; */
+        }
+        .form-data{
+            width: 40%;
+
+        }
+    }
+  
+    
+@media screen and (max-width: 786px) {
+    .btn-submit{
+          
+        padding: 12px 150px;
+    
+    }
+    .pic-form{
+        margin-left: 55%;
+        /* background-color: aqua; */
+    }
+    .form-data{
+        width: 45%;
+        top: 90px;
+        left: 80px;
+    }
+    .Form-headerspan{
+        margin-left: 80px;
+        /* margin-bottom: 30px; */
+        
+    }
+   }
+   @media screen and (max-width: 426px) {
+    .pic-form , .Form-Footer , .Form-Footer {
+        display: none;
+    }
+
+    .btn-submit{
+          
+        padding: 12px 120px;
+    
+    }
+   
+    .form-data{
+        width:70%;
+        top: 90px;
+        left: 80px;
+    }
+    .Form-headerspan{
+        margin-left: 80px;
+        /* margin-bottom: 30px; */
+        
+    }
+    .btn-home{
+        margin-bottom: 135px;
+    }
+   
+     }
+    
+     @media screen and (max-width: 377px) {
+        .btn-submit{
+          
+            padding: 12px 100px;
+        
+        }
+        .form-data{
+            width:75%;
+            top: 90px;
+            left: 80px;
+        }
+      
+    
+     }

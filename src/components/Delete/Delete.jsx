@@ -6,7 +6,7 @@ function Delete( { handelDelet , showMsg , handelShowDisMsg}) {
     return(
         <div style={{display:showMsg}} className='Delete'>
             
-            <div>are yoy Delet contact?</div>
+            <div><p>do you Delete contact?</p></div>
             <div>
                 <button onClick={handelDelet}>Yes</button>
                 <button onClick={handelShowDisMsg}>No</button>

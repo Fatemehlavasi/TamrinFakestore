@@ -4,7 +4,7 @@ import '../Form/Form.style.css'
 import pic from '../../Imags/pic.png'
 const Form = ({ setTodos, todos, form, setForm, setFormStatus, FormStatus }) => {
     const back =useNavigate();
-    //  start  code form
+    
     const handleChange = event => {
         setForm({ ...form, [event.target.name]: event.target.value })
     }
@@ -20,8 +20,7 @@ const Form = ({ setTodos, todos, form, setForm, setFormStatus, FormStatus }) => 
         setForm({ name: '', lastName: '', phone: '', age: '', Country: '', City: '', email: '' })
         setFormStatus('add')
     }
-    // ende code form
-
+  
 
     return (
         <div className='Container-Form'>
@@ -38,7 +37,7 @@ const Form = ({ setTodos, todos, form, setForm, setFormStatus, FormStatus }) => 
             <div className='form-data'>
                 <form onSubmit={handleSubmit} className="form-submit">
                     <lable htmlFor={'name'}>Name:</lable>
-                    <input type='text' name='name' value={form.name} onChange={handleChange} placeholder='' />
+                    <input type='text' name='name' value={form.name} required  onChange={handleChange} placeholder='' />
                     <lable htmlFor={'lastName'}>lastName:</lable>
                     <input type='text' name='lastName' value={form.lastName} onChange={handleChange} placeholder='' />
                     <lable htmlFor={'phone'}>Phone:</lable>
@@ -50,7 +49,7 @@ const Form = ({ setTodos, todos, form, setForm, setFormStatus, FormStatus }) => 
                     <lable htmlFor={'email'}>Email:</lable>
                     <input type='email' name='email' value={form.email} onChange={handleChange} placeholder='' />
                     <lable htmlFor={'age'}>age:</lable>
-                    <input type='number' name='age' value={form.age} onChange={handleChange} placeholder='' />
+                    <input type='number' name='age' value={form.age} onChange={handleChange} placeholder=''  />
 
                     <button type='submit'onClick={handleSubmit} className="btn-submit" >
                         {FormStatus === 'add' ? 'submit' : 'update'}
